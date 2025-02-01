@@ -1,9 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SearchBar } from "../components/SearchBar";
 import { WelcomeModal } from "../components/WelcomeModal";
+import { getAllMembers, getAllTrainers } from "../api/management.api";
 
 export default function HomePage() {
   const [showModal, setShowModal] = useState(false);
+  const [members, setMembers] = useState([]);
+
+  useEffect(() => {
+    // function loadMembers() {
+    //   getAllMembers2().then((res) => setMembers(res));
+    //   console.log(members);
+    // }
+
+    async function loadMembers() {
+      const res = await getAllMembers();
+      console.log(res);
+    }
+
+    async function loadTrainers() {
+      const response = await getAllTrainers();
+      console.log(response);
+    }
+
+    loadMembers();
+    loadTrainers();
+  }, []);
 
   const handleShowModal = () => {
     setShowModal(!showModal);
