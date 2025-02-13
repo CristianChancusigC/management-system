@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "first_name": "Fredy",
+    "last_name": "Lopez",
+    "email": "darios@test.com",
+    "cell_phone": "987654321",
+    "gender": "Hombre",
+    "specialization": "Todo",
+    "years_of_experience": 1,
+    "certifications": "",
+    "availability": "Todos los dias",
+    "salary": null,
+    "notes": ""
+  },
+  {
+    "id": 2,
+    "first_name": "Nelson",
+    "last_name": "Zora",
+    "email": "david@test.com",
+    "cell_phone": "789456123",
+    "gender": "Hombre",
+    "specialization": "Todo",
+    "years_of_experience": 1,
+    "certifications": "",
+    "availability": "Todos los dias",
+    "salary": null,
+    "notes": ""
+  }
+]
